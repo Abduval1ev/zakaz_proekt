@@ -73,6 +73,18 @@ const Header: React.FC = () => {
     }
   };
 
+  const handleLeaveAccount = () => {
+    const confirmLogout =
+      window.confirm(
+        "Siz chindan ham akkountingizni tark etmoqchimisiz ?"
+      );
+
+    if (confirmLogout) {
+      localStorage.clear()
+      router.push("/logout");
+    }
+  }
+
   return (
     <header className="pt-[22px] md:pt-[25px] fixed w-full z-[1000] bg-white">
       <Toaster position="top-center" reverseOrder={false} />
@@ -121,13 +133,14 @@ const Header: React.FC = () => {
             icon={<LoginIcon />}
             buttonWidth={100}
           /> : <Button
-            onClick={() => router.push("/logout")}
+            onClick={handleLeaveAccount}
             bgBtn={false}
             title="Logout"
             iconPosition="prev"
             icon={<LoginIcon />}
             buttonWidth={100}
-          />}
+          />
+          }
         </div>
         <input
           className="block md:hidden py-[14px] pl-[41px] w-[90%] search-input duration-300 outline-none focus:shadow text-[14px] font-normal leading-[16px] bg-[#F8F8F8] rounded-[10px]"

@@ -274,41 +274,6 @@ const LoginModal: FC<LoginModalProps> = ({ isOpen, onClose }) => {
                   bgBtn={false}
                 ></Button>
               </div>
-              {/* <div className="flex items-center justify-center text-center my-4">
-                <span className="block border-[1px] border-[#EAEAEA] w-[100px] mx-2"></span>
-                <span className="text-gray-600">Or login with</span>
-                <span className="block border-[1px] border-[#EAEAEA] w-[100px] mx-2"></span>
-              </div> */}
-              {/* <a href="https://google.com" target="_blank">
-                <button
-                  className="bg-white border border-gray-300 text-gray-700 font-bold py-[10px] px-4 rounded flex items-center justify-center w-full  mb-[15px]"
-                  type="button"
-                >
-                  <Image
-                    src="/google-icon.svg"
-                    alt="Login with Google"
-                    width={20}
-                    height={20}
-                    className="mr-2"
-                  />
-                  Continue with Google
-                </button>
-              </a>
-              <a href="https://facebook.com" target="_blank">
-                <button
-                  className="bg-white border border-gray-300 text-gray-700 font-bold py-[10px] px-4 rounded flex items-center justify-center w-full"
-                  type="button"
-                >
-                  <Image
-                    src="/facebook-icon.svg"
-                    alt="Login with Facebook"
-                    width={14}
-                    height={20}
-                    className="mr-2"
-                  />
-                  Continue with Facebook
-                </button>
-              </a> */}
             </form>
           )}
           {isModalContent == "Register" && (
@@ -413,43 +378,6 @@ const LoginModal: FC<LoginModalProps> = ({ isOpen, onClose }) => {
                   bgBtn={false}
                 ></Button>
               </div>
-              {/* <div className="flex items-center justify-center text-center my-4">
-                <span className="block border-[1px] border-[#EAEAEA] w-[100px] mx-2"></span>
-                <span className="text-gray-600 whitespace-nowrap">
-                  Or register with
-                </span>
-                <span className="block border-[1px] border-[#EAEAEA] w-[100px] mx-2"></span>
-              </div>
-              <a href="https://google.com" target="_blank">
-                <button
-                  className="bg-white border border-gray-300 text-gray-700 font-bold py-[10px] px-4 rounded flex items-center justify-center w-full  mb-[15px]"
-                  type="button"
-                >
-                  <Image
-                    src="/google-icon.svg"
-                    alt="Login with Google"
-                    width={20}
-                    height={20}
-                    className="mr-2"
-                  />
-                  Continue with Google
-                </button>
-              </a>
-              <a href="https://facebook.com" target="_blank">
-                <button
-                  className="bg-white border border-gray-300 text-gray-700 font-bold py-[10px] px-4 rounded flex items-center justify-center w-full"
-                  type="button"
-                >
-                  <Image
-                    src="/facebook-icon.svg"
-                    alt="Login with Facebook"
-                    width={14}
-                    height={20}
-                    className="mr-2"
-                  />
-                  Continue with Facebook
-                </button>
-              </a> */}
             </form>
           )}
           <div className="bg-[#46A358] w-full h-[10px] absolute bottom-0 left-0"></div>

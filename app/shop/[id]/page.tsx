@@ -16,6 +16,7 @@ import React, { useEffect, useState } from "react";
 import Interested from "../page";
 import { Rate } from "antd";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 interface SingleType {
   basket: boolean;
@@ -87,14 +88,14 @@ const Page = ({ params }: any) => {
               <div className="flex flex-col justify-center items-start hidden md:block">
                 <div className="flex flex-col justify-center items-start">
                   {[...Array(4)].map((_, index) => (
-                    <CustomImage
+                    <Image
                       width={100}
                       height={100}
                       priority={true}
                       onClick={() => setActiveImage(singleData.image_url[0])}
                       key={index}
                       alt={`Image ${index + 1}`}
-                      className="object-cover object-center rounded mb-2 duration-100 cursor-pointer hover:border-2 hover:border-green-500"
+                      className="object-cover object-center w-[100px] h-[100px] rounded mb-2 duration-100 cursor-pointer hover:border-2 hover:border-green-500"
                       src={singleData.image_url[0]}
                     />
                   ))}
